@@ -9,7 +9,9 @@ export default class PacMan {
     ghostCount : object;
     state: boolean;
     superTime : number;
-    constructor({lives=3, points=0, level=0, ballCount=0, ghostCount={}, state=false, superTime=0}){
+    position : object;
+
+    constructor({lives=3, points=0, level=0, ballCount=0, ghostCount={'total' : 0, 'blinky': 0, 'clyde': 0, 'pinky': 0, 'inky': 0}, state=false, superTime=0}){
 
         this.lives = lives;
         this.points = points;
